@@ -1,0 +1,46 @@
+# IntelliJ IDEA 的本机配置（包括各子目录中的 .idea）
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Maven / Java 编译产物
+target/
+out/
+*.class
+
+# 后端和 Nginx 的运行日志、进程文件
+*.log
+*.log.*
+*.pid
+
+# Nginx 运行时临时目录；保留 nginx.exe、conf 和 html
+**/nginx-*/temp/*
+!**/nginx-*/temp/.gitkeep
+**/nginx-*/client_body_temp/
+**/nginx-*/proxy_temp/
+**/nginx-*/fastcgi_temp/
+**/nginx-*/uwsgi_temp/
+**/nginx-*/scgi_temp/
+
+# 本机私密配置；示例配置仍可提交
+.env
+.env.*
+!.env.example
+!.env.*.example
+application-local.yml
+application-local.yaml
+application-*-local.yml
+application-*-local.yaml
+
+# 私钥和支付证书
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+
+# 操作系统生成的文件
+Thumbs.db
+Desktop.ini
+.DS_Store
